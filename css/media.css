@@ -1,0 +1,39 @@
+@media(min-width: 300px) and (max-width: 1200px){
+    .dropdown-content{
+        left: -125px;
+    }
+}
+@media(min-width: 576px) and (max-width: 1440px){
+    .info-holder-container{
+        min-height: calc(86.5vh - 147px);
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 992px) and (orientation: portrait){
+    .info-holder-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        /* height: 100vh; */
+        margin: 155px auto;
+    }
+    .main-info{
+        align-items: center;
+    }
+    .info__description{
+        text-align: center;
+    }
+    .info-logo{
+        margin-bottom: 40px;
+    }
+    .footer{
+        display: none;
+    }
+    .form__wrapper {
+        top: -550px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+}

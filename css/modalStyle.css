@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'El Messiri', sans-serif;
+}
+input{
+    font-family: 'El Messiri', sans-serif;
+}
+.form__wrapper{
+    display: flex;
+    justify-content: center;
+    margin: auto; 
+    width: 630px;
+    height: 650px;
+    border: 1px solid #e5e9f2;
+    border-radius: 15px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 150;
+    display: none;
+}
+.form__info{
+    margin: auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e5e9f2;
+}
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+.modal-separator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.modal-top__left{
+    width: 50%;
+}
+.modal-top__right{
+    width: 50%;
+    gap: 18px;
+}
+.modal-mid__left{
+    width: 50%;
+    padding-left: 25px;
+}
+.modal-mid__right{
+    width: 50%;
+    padding-left: 30px;
+}
+.label-splitter{
+    margin-right: 5px;
+}
+.fields{
+    gap: 20px;
+}
+.field{
+    display: block;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    border-color: #591794;
+    text-indent: 15px;
+    font-size: 18px;
+}
+.field:focus{
+    /* border: 1px solid #6b18b4; */
+    outline: none;
+}
+.buttons{
+    margin: 0 auto;
+}
+.label{
+    padding: 3px 20px 3px 0;
+}
+.radio__btn:not(:last-child){
+    margin-bottom: 15px;
+}
+.form__btn{
+    width: 500px;
+    margin-top: 20px;
+}
+.modal-overlay--visible {
+    background-color: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+.modal--visible {
+	display: block;
+}

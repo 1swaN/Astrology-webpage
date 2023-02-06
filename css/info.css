@@ -1,0 +1,51 @@
+.info-holder-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 78.5vh;
+    margin: 55px auto;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 100px; */
+    gap: 40px;
+    width: 50%;
+}
+.info__description{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.info__sign{
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    border-color: transparent;
+    background-color: #591794;
+    cursor: pointer;
+    font-family: 'El Messiri', sans-serif; /*почему не применяется стиль из body - непонятно*/
+}
+.info__sign:hover{
+    opacity: 0.8;
+}
+.info__sign:active{
+    background-color: #fff;
+    border-color: #591794;
+    color: #591794;
+}
+.info-logo{
+    width: 350px;
+    /* padding-top: 90px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info__img{
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    display: block;
+}

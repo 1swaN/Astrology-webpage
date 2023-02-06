@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'El Messiri', sans-serif;
+    min-width: 1130px;
+    /* min-height: 716px; */
+}
+/* header */
+.header-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 25px;
+}
+.info-holder{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.container{
+    width: 1100px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e9f2;
+    height: 72px;
+}
+.header__logo{
+    font-size: 30px;
+    line-height: 25px;
+}
+.header-social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    line-height: 25px;
+}
+.img{
+    width: 25px;
+    height: 25px;
+}
+
+/* выпадающее меню языков */
+.header-lang{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 150px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -75px;
+}
+.content__link{
+    color:#000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.content__link:hover{
+    background-color: #591794;
+    color: #fff;
+}
+.content__link:active{
+    background-color: #fff;
+    color: #591794;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.lang__img{
+    vertical-align: middle;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: 72px;
+}
+.footer__container{
+    display: flex;
+}
+.footer__rights{
+    color: #fff;
+}

@@ -1,0 +1,28 @@
+.centered-row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.centered-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-skin{
+    background-color: #591794;
+    color: #fff;
+    border-radius: 25px;
+    border-color: transparent;
+    font-size: 18px;
+    height: 50px;
+    cursor: pointer;
+}
+.btn-skin:active{
+    background-color: #fff;
+    color: #591794;
+    border-color: #591794;
+}
+.btn-skin:hover{
+    opacity: .8;
+}
