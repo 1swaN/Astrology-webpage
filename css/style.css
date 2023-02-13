@@ -34,13 +34,6 @@ body{
     font-size: 30px;
     line-height: 25px;
 }
-.header-social{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    line-height: 25px;
-}
 .img{
     width: 25px;
     height: 25px;

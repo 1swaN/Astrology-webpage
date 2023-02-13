@@ -5,7 +5,8 @@
 } */
 @media(max-width: 1130px){
     .header-container{
-        justify-content: space-around;
+        justify-content: space-between;
+        margin: 0 55px;
     }
 }
 @media(min-width: 576px) and (max-width: 1440px){
@@ -22,9 +23,6 @@
         display: flex;
         align-items: center;
         font-size: 42px;
-    }
-    .header-social{
-        margin-right: 70px;
     }
     .info-holder-container{
         display: flex;
