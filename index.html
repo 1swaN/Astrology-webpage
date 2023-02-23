@@ -35,7 +35,8 @@
             <div class="main-info">
                 <h1 class="info__title">Специалист по астрологии - Елена</h1>
                 <p class="info__description">Соображения высшего порядка, а также дальнейшее развитие различных форм деятельности требует от нас системного анализа существующих финансовых и административных условий.</p>
-                <button class="info__sign" data-path="form-popup">Записаться на сеанс</button>
+                <!-- <button class="info__sign" data-path="form-popup">Записаться на сеанс</button> -->
+                <a class="info__sign" data-path="form-popup">Записаться на сеанс</a>
             </div>
             <div class="info-logo">
                 <img src="./jpg/-round.png" alt="Изображение от cookie_studio на Freepik" class="info__img">
@@ -55,14 +56,23 @@
                 <div class="modal-top modal-separator">
                     <div class="modal-top__left">
                         <div class="fields centered-column">
-                            <input type="text" class="POST-name field" placeholder="Ваше имя">
-                            <input type="text" class="POST-surname field" placeholder="Ваша фамилия">
+                            <div class="fields-name">
+                                <label class="field__name">Ваше имя</label>
+                                <input type="text" class="POST-name field">
+                            </div>
+                            <div class="field-surname">
+                                <label class="field__name">Ваша фамилия</label>
+                                <input type="text" class="POST-surname field">
+                            </div>
                         </div>
                     </div>
                     <div class="modal-top__right centered-column">
-                        <input type="email" class="POST-email field" placeholder="Ваш e-mail">
+                        <div class="right-email">
+                            <label class="field__name" for="email-field">Ваш e-mail</label>
+                            <input type="email" class="POST-email field" id="email-field">
+                        </div>
                         <div class="datetime">
-                            <p class="datetime__title">Выберите удобные дату и время</p>
+                            <label class="datetime__title">Выберите удобные дату и время</label>
                             <input type="datetime-local" name="datetime" id="datetime"> 
                             <!-- <div class="look-calendar">
                                 <table id="calendar">
@@ -109,7 +119,8 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <input type="submit" value="Отправить" class="form__btn btn-skin">
+                    <!-- <input type="submit" value="Отправить" class="form__btn btn-skin"> -->
+                    <a href="#" class="form__btn btn-skin">Отправить</a>
                 </div>
             </form>
         </div>
