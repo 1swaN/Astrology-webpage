@@ -11,7 +11,7 @@ input{
     justify-content: center;
     margin: auto; 
     width: 630px;
-    height: 450px;
+    height: 510px;
     border: 1px solid #e5e9f2;
     border-radius: 15px;
     background-color: #fff;
@@ -76,6 +76,11 @@ input{
 .buttons{
     margin: 0 auto;
 }
+.datetime{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
 .label{
     padding: 3px 20px 3px 0;
 }
@@ -83,6 +88,10 @@ input{
     margin-bottom: 15px;
 }
 .form__btn{
+    display: block;
+    text-align: center;
+    padding-top: 11px;
+    text-decoration: none;
     width: 500px;
     margin-top: 20px;
 }
@@ -100,3 +109,4 @@ input{
 .modal--visible {
 	display: block;
 }
+
