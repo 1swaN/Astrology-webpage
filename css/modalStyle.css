@@ -73,6 +73,12 @@ input{
     /* border: 1px solid #6b18b4; */
     outline: none;
 }
+/* .field:invalid{
+    border-color: red;
+}
+.field:invalid:required{
+    background-color: #f2887e;
+} */
 .buttons{
     margin: 0 auto;
 }

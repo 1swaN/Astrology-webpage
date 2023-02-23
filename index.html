@@ -35,8 +35,8 @@
             <div class="main-info">
                 <h1 class="info__title">Специалист по астрологии - Елена</h1>
                 <p class="info__description">Соображения высшего порядка, а также дальнейшее развитие различных форм деятельности требует от нас системного анализа существующих финансовых и административных условий.</p>
-                <!-- <button class="info__sign" data-path="form-popup">Записаться на сеанс</button> -->
-                <a class="info__sign" data-path="form-popup">Записаться на сеанс</a>
+                <button class="info__sign" data-path="form-popup">Записаться на сеанс</button>
+                <!-- <a class="info__sign" data-path="form-popup">Записаться на сеанс</a> -->
             </div>
             <div class="info-logo">
                 <img src="./jpg/-round.png" alt="Изображение от cookie_studio на Freepik" class="info__img">
@@ -58,37 +58,22 @@
                         <div class="fields centered-column">
                             <div class="fields-name">
                                 <label class="field__name">Ваше имя</label>
-                                <input type="text" class="POST-name field">
+                                <input type="text" class="POST-name field" required="required" minlength="2">
                             </div>
                             <div class="field-surname">
                                 <label class="field__name">Ваша фамилия</label>
-                                <input type="text" class="POST-surname field">
+                                <input type="text" class="POST-surname field" required="required" minlength="3">
                             </div>
                         </div>
                     </div>
                     <div class="modal-top__right centered-column">
                         <div class="right-email">
-                            <label class="field__name" for="email-field">Ваш e-mail</label>
-                            <input type="email" class="POST-email field" id="email-field">
+                            <label class="field__name">Ваш e-mail</label>
+                            <input type="email" class="POST-email field" id="email-field" required="required">
                         </div>
                         <div class="datetime">
                             <label class="datetime__title">Выберите удобные дату и время</label>
-                            <input type="datetime-local" name="datetime" id="datetime"> 
-                            <!-- <div class="look-calendar">
-                                <table id="calendar">
-                                    <thead>
-                                        <tr>
-                                            <td><b>‹</b></td>
-                                            <td colspan="5"></td>
-                                            <td><b>›</b></td>
-                                        </tr>
-                                        <tr class="dn">
-                                            <td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                            </div> -->
+                            <input type="datetime-local" name="datetime" id="datetime" required="required"> 
                         </div>
                     </div>
                 </div>
@@ -119,8 +104,8 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <!-- <input type="submit" value="Отправить" class="form__btn btn-skin"> -->
-                    <a href="#" class="form__btn btn-skin">Отправить</a>
+                    <input type="submit" value="Отправить" class="form__btn btn-skin">
+                    <!-- <a href="#" class="form__btn btn-skin">Отправить</a> -->
                 </div>
             </form>
         </div>
@@ -128,5 +113,6 @@
     <script src="./js/modal.js"></script>
     <script src="./js/modalSend.js"></script>
     <script src="./js/calendar.js"></script>
+    <script src="./js/field.js"></script>
 </body>
 </html>
