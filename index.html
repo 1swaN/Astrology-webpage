@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/modalStyle.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/info.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/settings.css">
-    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="./css/userAlert.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>Astrology</title>
 </head>
 <body>
@@ -36,10 +37,9 @@
                 <h1 class="info__title">Специалист по астрологии - Елена</h1>
                 <p class="info__description">Соображения высшего порядка, а также дальнейшее развитие различных форм деятельности требует от нас системного анализа существующих финансовых и административных условий.</p>
                 <button class="info__sign" data-path="form-popup">Записаться на сеанс</button>
-                <!-- <a class="info__sign" data-path="form-popup">Записаться на сеанс</a> -->
             </div>
             <div class="info-logo">
-                <img src="./jpg/-round.png" alt="Изображение от cookie_studio на Freepik" class="info__img">
+                <img src="./jpg/-round.png" alt="Helena's photo" class="info__img">
             </div>
         </div>
     </main>
@@ -49,70 +49,17 @@
         </div>
     </footer>
 
-    <div class="filter">
-        <div class="form__wrapper" data-target="form-popup">
-            <form action="" class="modal-form">
-                <p class="form__info">Информация о вас</p>
-                <div class="modal-top modal-separator">
-                    <div class="modal-top__left">
-                        <div class="fields centered-column">
-                            <div class="fields-name">
-                                <label class="field__name">Ваше имя</label>
-                                <input type="text" class="POST-name field" required="required" minlength="2">
-                            </div>
-                            <div class="field-surname">
-                                <label class="field__name">Ваша фамилия</label>
-                                <input type="text" class="POST-surname field" required="required" minlength="3">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-top__right centered-column">
-                        <div class="right-email">
-                            <label class="field__name">Ваш e-mail</label>
-                            <input type="email" class="POST-email field" id="email-field" required="required">
-                        </div>
-                        <div class="datetime">
-                            <label class="datetime__title">Выберите удобные дату и время</label>
-                            <input type="datetime-local" name="datetime" id="datetime" required="required"> 
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-mid modal-separator">
-                    <div class="modal-mid__left">
-                        <p class="services__title">Услуги</p>
-                        <label class="services__lbl label" for="tarot">
-                            <input class="label-splitter" type="checkbox" id="tarot">Гадание по картам Таро
-                        </label><br>
-                        <label class="services__lbl label" for="hand">
-                            <input class="label-splitter" type="checkbox" id="hand">Гадание по руке
-                        </label><br>
-                        <label class="services__lbl label" for="prediction">
-                            <input class="label-splitter" type="checkbox" id="prediction">Астрологический прогноз на будущее
-                        </label><br>
-                    </div>
-                    <div class="modal-mid__right">
-                        <p class="buttons__title">Язык сеанса</p>
-                        <label class="radio__lbl label" for="eng">
-                            <input type="radio" name="fav_language" id="eng" value="English" class="radio__btn label-splitter">English
-                        </label><br>
-                        <label class="radio__lbl label" for="port">
-                            <input type="radio" name="fav_language" id="esp" value="Español" class="radio__btn label-splitter">Español
-                        </label><br>
-                        <label class="radio__lbl label" for="rus">
-                            <input type="radio" name="fav_language" id="rus" value="Русский" class="radio__btn label-splitter">Русский
-                        </label><br>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <input type="submit" value="Отправить" class="form__btn btn-skin">
-                    <!-- <a href="#" class="form__btn btn-skin">Отправить</a> -->
-                </div>
-            </form>
+    <div class="alert" id="success-alert">
+        <span class="fas fa-circle-check"></span>
+        <span class="msg">Ваша заявка успешно отправлена!</span>
+        <div class="close-btn">
+            <span class="fas fa-times"></span>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
-    <script src="./js/modalSend.js"></script>
-    <script src="./js/calendar.js"></script>
-    <script src="./js/field.js"></script>
+    <!-- очень важно подключить modal после base, чтобы в modal был доступен объект $ -->
+    <script src="./js/customUserAlert.js"></script>
+   <script src="./js/base.js"></script>
+   <script src="./plugins/modal.js"></script>
+   <script src="./js/index.js"></script>
 </body>
 </html>

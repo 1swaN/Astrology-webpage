@@ -43,7 +43,7 @@
     .footer{
         display: none;
     }
-    .form__wrapper {
+    .modal-window {
         top: -550px;
         right: 0;
         bottom: 0;
